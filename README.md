@@ -37,5 +37,5 @@ To utilize this project, follow these steps:
 Contributions are welcome! If you have any ideas for improvements or new features, feel free to fork the repository, make your changes, and submit a pull request.
 
 ## Contact
-For any inquiries or feedback, please contact [Nitesh](mailto:nitesh@example.com).
+For any inquiries or feedback, please contact [Nitesh](mailto:niteshkumar61725@gmail.com).
 
