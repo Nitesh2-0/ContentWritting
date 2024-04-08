@@ -6,9 +6,8 @@ This project aims to provide a platform for content writing, enabling users to c
 ## Features
 - **Create**: Users can create new content pieces using a rich text editor or markdown.
 - **Edit**: Edit existing content with ease, whether it's correcting errors or updating information.
-- **Organize**: Organize content into categories or tags for better management and navigation.
+- **view Details of Writer**: who was posted that content.
 - **Publish**: Publish content to make it accessible to readers.
-- **Search**: Efficiently search for content based on keywords or filters.
 - **Collaborate**: Allow multiple users to collaborate on content creation and editing.
 
 ## Usage
