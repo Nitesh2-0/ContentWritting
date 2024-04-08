@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Details</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="w-full h-screen bg-slate-700 flex flex-wrap flex-col text-center justify-center items-center ">
+    <h2 class="text-white text-2xl mb-1 font-bold">Edit Your Details</h2>
+    <form action="/<%= post.id %>/edit?_method=PATCH" method="post">
+      <textarea name="name" cols="40" rows="1" placeholder="Enter Username.." class="p-2 rounded-md text-white border border-sky-500 bg-transparent m-2" required><%= post.name %></textarea><br>
+      <textarea name="title" cols="40" rows="2" placeholder="Write Title Here.." class="p-2 rounded-md text-white border border-sky-500 bg-transparent m-2" required><%= post.title %></textarea> <br>
+      <textarea name="content" cols="40" rows="12" placeholder="Write Content Here.." class="p-2 rounded-md text-white border border-sky-500 bg-transparent " required><%= post.content %></textarea> <br>
+      <button value="submit" class="p-3 pl-10 pr-10 bg-slate-800 text-white rounded-lg">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-700 w-full text-slate-100">
+  <nav class="fixed top-0 w-full pt-2 pb-2 p-10 p bg-slate-700 z-9 flex flex-wrap justify-between items-center">
+    <h1 class="font-bold text-yellow-200 ">Random Blog India⚡</h1>
+    <h3 class="hidden md:block">I Welcome you in Content Writting World 🌍</h3>
+    <a href="http://localhost:3000/newPost"><button class="bg-gray-500 pt-2 pb-2 p-5 rounded-lg">Create new Post</button></a>
+  </nav>
+  <div class="flex flex-wrap w-full flex flex-wrap justify-center sm:mt-12 mt-20">
+    <% posts.forEach((post)=>{ %>
+      <div class="border border-sky-500 rounded-md p-4 w-96 m-5">
+        <a href="/details-of-<%= post.id %>"><h1 class="text-lime-400 font-bold text-xl"> <span class="text-amber-400">@</span> <%= post.name %></h1></a>
+        <div class="w-full mt-2">
+          <p class="mt-2 mb-1 p-2 rounded-lg bg-sky-800 font-semibold">📝 About 👉 <%= post.title %></p>
+          <p class='text-slate-100'><%= post.content %></p>
+        </div>
+        <div class="w-full flex justify-between mt-5">
+          <a href="http://localhost:3000/<%= post.id%>/edit"><button class="bg-indigo-700 p-10 pt-2 pb-2 rounded-md">Edit</button></a>
+          <form action="/Delete/<%= post.id %>?_method=DELETE" method="POST">
+            <button type="submit" class="bg-red-700 p-5 pt-2 pb-2 rounded-md">Delete</button>
+          </form>          
+        </div>
+      </div>
+    <%})%>
+  </div>
+</body>
+</html>
