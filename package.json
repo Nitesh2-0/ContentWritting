@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "run": "nodemon index.js"
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "NiteshKr",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.10",
     "express": "^4.19.2",
     "method-override": "^3.0.0",
     "uuid": "^9.0.1"
